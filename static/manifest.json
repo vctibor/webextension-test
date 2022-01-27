@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "webextension-test",
+  "description": "",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab", "webNavigation", "storage"
+  ],
+  "content_scripts": [{
+    "js": ["content-script.js"],
+    "matches": ["*://*/*"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy":  "script-src 'self'; object-src 'self'"
+}

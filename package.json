@@ -4,14 +4,19 @@
   "description": "webextension-test =================",
   "private": true,
   "scripts": {
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "start:firefox": "web-ext run --source-dir ./dist/",
+    "dev": "npx webpack && web-ext run --source-dir ./dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copy-webpack-plugin": "^10.2.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
+    "web-ext": "^6.6.0",
+    "webextension-polyfill": "^0.8.0",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
   }
