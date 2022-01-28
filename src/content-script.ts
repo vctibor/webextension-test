@@ -1,1 +1,1 @@
-console.log('this is content script')
+console.bg('this is content script')

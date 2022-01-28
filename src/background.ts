@@ -1,1 +1,2 @@
-console.log('this is background')
+console.bg('this is background')
+//console.log('this is background')

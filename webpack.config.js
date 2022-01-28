@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
+const BackgroundLogger = require('webpack-webextension-background-logger')
 
 module.exports = {
     mode: 'development',
@@ -30,9 +31,9 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "static/manifest.json", to: "manifest.json" },
-                { from: "static/popup.html", to: "popup.html" }
-
+                { from: "static/*", to: "." }
             ],
         }),
+        new BackgroundLogger()
     ],
 };

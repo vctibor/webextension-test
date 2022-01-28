@@ -58,6 +58,8 @@ Content of storage can be [viewed](https://ui.vision/howto/view-local-storage).
 
  - https://www.npmjs.com/package/webpack-webextension-background-logger
 
+ I was unable to make this one work :(
+
 ### Messaging
 
  - https://github.com/tshaddix/webext-redux
